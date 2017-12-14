@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="asset/css/main.css">
+</head>
+<body>
+
+	<div id="splash">
+		<div class="row">
+			<div class="col-xs-12">
+				<center>
+					<img src="asset/img/dribbble-lyft_orig.gif"/>
+				</center>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section class="principal">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-4">
+				<img src="asset/img/logoblanco.png" class="img-responsive logo-blanco">
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col-xs-8">
+				<img src="asset/img/logo.png" class="img-responsive logo-rosa">
+			</div>
+		</div>
+		<div class="row row-buttons">
+			<div class="col-xs-6 text-right">
+				<button type="button" class="btn border-white button-login" style="border: 2px solid white; color: white">LOG IN</button>
+			</div>
+				<div class="col-xs-6">
+				<button type="button" class="btn button-login" style="border: 2px solid white; color: white">SING UP</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="container sing-up-section row">
+   	 	<div class="col-xs-12">
+   	 		<div class="row">
+   	 			<div class="col-xs-2">
+   	 				<span class="fa fa-arrow-circle-left back"></span>
+   	 			</div>
+   	 		</div>
+       		<div class="modal-header text-center">	
+          		</span><h1 class="modal-title">Sing Up</h1>
+          		<p>Join Now for free ride credit</p>
+        	</div>
+        	<div class="modal-body">
+          		<div class="input-group">
+                	<div class="input-group-btn">
+                    	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">País
+               			<span class="caret"></span>
+              			</button>
+                   		<ul class="dropdown-menu">
+                        	<li>
+                            	<a href="#">
+                                	<img src="asset/img/flag-chile.png" alt="Chile">
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="asset/img/flag-brazil.png" alt="Brazil"> 
+                            	</a>
+                        	</li>
+                       	 	<li>
+                            	<a href="#">
+                                	<img src="asset/img/flag-argentina.png" alt="Argentina">
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="asset/img/flag-peru.png" alt="Peru">
+                            	</a>
+                       		 </li>
+                    	</ul>
+                	</div>
+					<input class="number form-group"  id="input-key" maxlength="10">
+        		</div>
+        		<div class="container-fluid section-boton">
+    				<div class="row">
+	    				<div class="col-xs-12">
+	    					<button class="next-number btn btn-primary disabled" id="btn-next">Next</button>
+	    				</div>
+    				</div>
+    			</div>
+      
+        		<div class="modal-footer">
+        			<div class="row">
+    					<div class="col-xs-12 col-sm-12">
+    						<p id="text-verify">We'll send you a text to verify your phone</p>
+    					</div>
+    				</div>
+   			 	</div>
+			</div> 				
+  		</div>
+  	</section>
+  	<section class="verify-section container">
+  		<div class="row text-center">
+  			<div class="col-xs-12">
+  				<h2>Verify Phone number</h1>
+  				<h5>Join now for free ride credit</h3>
+  				<span>LAB-</span><input class="number form-group"  id="verify-key" maxlength="3">
+				<p>Enter the code sent to +52</p>
+				<button class="resend-button btn btn-default" id="btn-next">Resend Code</button>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  		<div class="col-xs-12 text-center">
+  			<button class="resend-next btn btn-primary disabled" id="resend-next-button">Next</button>
+    	</div>	
+  	</div>
+  	</section>
+  	<section class="register container text-center">
+  		<div class="row">
+  			<div class="col-xs-12">
+  				<h2>Sing Up</h2>
+  				<p>Join now for free ride credit</p>
+  				<form action="" method="post">
+  					<div class="input-group input-container">
+                		<span class="input-group-addon"><i class="fa fa-user""></i></span>
+  						<input type="email" class="form-control input-register" placeholder="Full Name">
+					</div> 
+               		 <div class="input-group input-container">
+ 						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+  						<input type="email" class="form-control input-register" placeholder="your@email.com">
+					</div>  
+					<div class="checkbox">
+                		<label>
+                 	 		<input type="checkbox"> I agree to lyft'ss Terms of Service
+               		 	</label>
+              		</div>
+            	</form>
+            	<button class=" btn btn-primary disabled" id="register-next-button">Next</button>
+  			</div>
+  		</div>	
+  	</section>
+ 	<section class="final-section">
+  		<div class="row">
+  			<div class="col-xs-12"></div>
+  		</div>
+  	</section>
+
+
+	
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="asset/js/app.js"></script>
+</body>
+</html>
