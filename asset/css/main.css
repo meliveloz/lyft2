@@ -2,10 +2,12 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-
+*:focus{
+    outline: none;
+}
 
 #splash{
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     bottom:0;
@@ -34,6 +36,10 @@ button{
 .logo-blanco{
 	width: 40%
 }
+.logo-blanco2{
+	width: 40%;
+
+}
 .logo-rosa{
 	width: 60%;
 }
@@ -49,15 +55,18 @@ button{
 .next-number{
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
+	background-color: hotpink;
+	font-weight: bolder;
+	margin-top: : 2em;
 }
 .input-container{
 	padding-bottom: 4vh;
 }
 .final-section{
-	background-image: url(../img/final1.png);
+	background-image: url(../img/post-banner-default.png);
 	height: 100vh;
 	background-size: cover;
-	background-position: center bottom;
+
 }
 .fa-arrow-circle-left{
 	font-size: 2em;
@@ -65,4 +74,63 @@ button{
 }
 h1{
 	color: hotpink;
+}
+.flags{
+	background-color: hotpink;
+    color: white;
+}
+li{
+	border-bottom: 1px solid hotpink;
+}
+li:hover{
+	background-color: rgba(0,0,0,0.25);
+}
+.list-flag{
+	padding: 0;
+}
+.li-flag{
+	background-color: #FFD7F9;
+}
+.number{
+	height: 2.4em;
+	background-color: transparent;
+	border:none;
+	border-bottom: 1px solid black;
+	margin: 0;
+	width: 80%;
+}
+.row-next-singup{
+	padding-top: 3vh;
+}
+h2{
+	color: hotpink;
+}
+
+.col-button-next{
+	margin-top: 4vh;
+}
+.resend-button{
+	margin-top: 4vh;
+}
+.resend-next{
+	width: 100%;
+	background-color: hotpink;
+}
+.btn-last{
+	width: 100%;
+	background-color: hotpink;
+}
+.final-title{
+	color: white;
+	text-align: center;
+}
+.back-final{
+	color: white;
+	font-size: 5em;
+}
+.back-register{
+	text-align: left;
+	font-size: 5em;
+	margin-top: 2em;
+
 }

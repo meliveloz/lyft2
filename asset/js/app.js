@@ -2,14 +2,10 @@ $(document).ready(function(){
 	$(function(){
    	setTimeout(function() {
       $('#splash').fadeOut(1000);
-   	}, 4000);
+   	}, 5000);
   });
-  $(".verify-section").fadeOut();
-  $(".register").fadeOut();
-  $(".final-section").fadeOut();
-  $(".button-login").click(function(){
-    $(".principal").fadeOut();
-  });
+  
+ 
 	var randomNumber = (function() {
  	var code = "";
   	var str = "1234567890";
@@ -31,14 +27,12 @@ $(document).ready(function(){
 
 
     $("#btn-next").click(function() {
-      $(".sing-up-section").fadeOut();
-       $(".verify-section").fadeIn();
        alert("Tu código es "+randomNumber());
      
       });
 
     $(".resend-button").click(function(){
-      alert("Tu código es "+randomNumber());
+      alert("Tu código es "+ randomNumber());
 
     });
 
@@ -51,24 +45,28 @@ $(document).ready(function(){
         $("#resend-next-button").addClass("disabled");
       }
     });
-    $("#resend-next-button").click(function(){
-      $(".verify-section").fadeOut();
-       $(".register").fadeIn();
-    })
-    $(".input-register").keyup(function() {
+    
+    $(".input-name").keyup(function() {
      
-      var inputValue = $(".input-register").val();
-      if (inputValue.length !==0) {
+      var inputNameValue = $(".input-name").val();
+      var inputMailValue =$(".input-mail").val();
+      if (inputNameValue.length > 0 && inputMailValue.length > 0) {
+        $("#register-next-button").removeClass("disabled");
+      } else {
+        $("#register-next-button").addClass("disabled");
+      }
+    });
+     $(".input-mail").keyup(function() {
+     
+      var inputNameValue = $(".input-name").val();
+      var inputMailValue =$(".input-mail").val();
+      if (inputNameValue.length > 0 && inputMailValue.length > 0) {
         $("#register-next-button").removeClass("disabled");
       } else {
         $("#register-next-button").addClass("disabled");
       }
     });
 
-    $("#register-next-button").click(function(){
-      $(".register").fadeOut();
-      $(".final-section").fadeIn();
-    });
-
+  
 
 });
